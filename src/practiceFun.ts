@@ -1,3 +1,6 @@
+// type alaises
+type objWithname= {name: string, age : number}
+
 let fun : Function;
 
 fun = (argOne : number, argTwo : string) : void => {
@@ -16,3 +19,11 @@ const minus = (a: number, b: number, c: number = 10) : number => { // defullt va
 }
 
 minus(20,1)
+
+//fun signature
+let calc : (a:number, b:number) => number;
+calc = (numOne: number, numTwo: number) => {
+    return numOne+numTwo
+}
+
+calc(10,15)

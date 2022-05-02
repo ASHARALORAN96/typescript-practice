@@ -12,3 +12,9 @@ const minus = (a, b, c = 10) => {
     return a + b + c;
 };
 minus(20, 1);
+//fun signature
+let calc;
+calc = (numOne, numTwo) => {
+    return numOne + numTwo;
+};
+calc(10, 15);
