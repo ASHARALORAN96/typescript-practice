@@ -1,33 +1,37 @@
-var character = 'Ashar';
-var inputs = document.querySelectorAll('input');
+"use strict";
+let character = 'Ashar';
+const inputs = document.querySelectorAll('input');
 character = 'Ghala';
-var circle = function (diameter) {
+const circle = (diameter) => {
     return diameter * Math.PI;
 };
 console.log(circle(10));
-var obj = {
+let obj = {
     name: 'soso',
     age: 26,
     belt: 'black'
 };
 // explicit types
-var nameChar;
-var age;
-var isActive;
-var testArr = [];
+let nameChar;
+let age;
+let isActive;
+let testArr = [];
 testArr.push(20);
 // union types : to could be more than one option
-var testName;
-var arr = []; // equal to [] to allow push method
+let testName;
+let arr = []; // equal to [] to allow push method
 // objects
-var testObj;
+let testObj;
 testObj = { name: 'hello' };
 testObj = [1, 2];
 // console.log(testObj)
 // strict obj
-var testObjTwo;
+let testObjTwo;
 testObjTwo = {
     name: 'Nahla',
     age: 26,
     hasAJob: true
 };
+// any type // use it when i dont know what is the type
+let char;
+char = 'helllo';

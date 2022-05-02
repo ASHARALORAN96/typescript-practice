@@ -45,3 +45,8 @@ testObjTwo = {
     age : 26,
     hasAJob : true
 }
+
+// any type // use it when i dont know what is the type
+
+let char: any
+char = 'helllo'
