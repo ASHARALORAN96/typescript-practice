@@ -18,3 +18,16 @@ calc = (numOne, numTwo) => {
     return numOne + numTwo;
 };
 calc(10, 15);
+let me;
+me = {
+    name: 'samera',
+    age: 28,
+    speak(text) {
+        console.log(text);
+    }
+};
+let grating;
+grating = (person) => {
+    return `hello ${person}`;
+};
+grating(me);

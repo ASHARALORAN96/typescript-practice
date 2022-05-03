@@ -27,3 +27,25 @@ calc = (numOne: number, numTwo: number) => {
 }
 
 calc(10,15)
+
+//// Interfaces 
+interface IsPerson {
+    name : string,
+    age: number,
+    speak(a:string) :void,
+} 
+
+let me : IsPerson
+me = {
+    name: 'samera',
+    age: 28,
+    speak (text:string) : void {
+        console.log(text)
+    }
+}
+
+let grating :(person : IsPerson) => string;
+grating = (person)=>{
+    return `hello ${person}`
+}
+grating(me)

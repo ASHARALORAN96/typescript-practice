@@ -19,6 +19,13 @@
     <footer>
         <form class="new-item-form">
             <div class="field">
+                <label for="type">Type</label>
+                <select id="type">
+                    <option value="invoice">Invoice</option>
+                    <option value="payment">Payment</option>
+                </select>
+            </div>
+            <div class="field">
                 <label for="tofrom">To / From</label>
                 <input type="text" id="tofrom">
             </div>
@@ -30,11 +37,11 @@
 
             <div class="field">
                 <label for="amount">Amount :</label>
-                <input type="text" id="amount">
+                <input type="number" id="amount">
             </div>
-            <button>Add</button>
+            <button type="submit">Add</button>
         </form>
     </footer>
-    <script src="./sandbox.js"></script>
+    <script type="module" src="app.js"></script>
 </body>
 </html>
