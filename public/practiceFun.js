@@ -31,3 +31,12 @@ grating = (person) => {
     return `hello ${person}`;
 };
 grating(me);
+// Generics
+const addUID = (obj) => {
+    const uid = Math.random();
+    return Object.assign(Object.assign({}, obj), { uid });
+};
+let testDoc = addUID({ name: "sara", age: "12" });
+console.log(testDoc.name);
+const m = { mangerName: 'Marwan', jobTitle: 'Implmentation team lead', notes: 'Ashar do a good jpb' };
+console.log(m);

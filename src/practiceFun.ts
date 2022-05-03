@@ -49,3 +49,20 @@ grating = (person)=>{
     return `hello ${person}`
 }
 grating(me)
+
+
+// Generics
+const addUID = <T extends object>(obj: T) => {
+    const uid = Math.random();
+    return { ...obj, uid };
+  };
+  let testDoc = addUID({ name: "sara", age: "12" });
+  console.log(testDoc.name);
+  
+  interface Manging <T>{
+      mangerName : string,
+      jobTitle : string ,
+      notes: T
+  }
+  const m :Manging <string> = {mangerName: 'Marwan', jobTitle: 'Implmentation team lead', notes : 'Ashar do a good jpb'};
+  console.log(m)
